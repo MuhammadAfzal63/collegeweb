@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addmission</title>
+    <link rel="icon" type="img/icon" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #addmission{
+            height: 800px;
+            width: 100%;
+            padding: 2rem 5rem 4rem 5rem;
+            background-color:#C9C7D2;
+        }
+        #addmission h1{
+            text-align: center;
+            /* padding-bottom: 8px; */
+            margin-bottom: 10px;
+             color: red;
+        }
+        #addmission .exp{
+      height: 90px;
+      width: 650px;
+      position: relative;
+      top: -8rem;
+      left: 3rem;
+        }
+        #addmission .exp h1{
+           text-align: center;
+           color: #e1e4e7;
+           
+        }
+        .addmissionpage img{
+            height: 500px;
+        }
+        #textp2{
+           margin-left: 13rem;
+        }
+        .addmissionpage h1{
+            height: 500px;
+            width: 100%;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute; 
+            top: 10rem;
+            background-color: rgba(0, 0, 0, 0.67);
+            color: white;
+            
+        }
+        .addmission{
+            background-color: #C9C7D2;
+            height: 500px;
+        }
+        .subjectcom{
+            height: 300px;
+            width: 650px;
+            background-color: #d2e397;
+            border: 2px solid black;
+           border-radius: 1rem;
+           margin-top: -5rem;
+           margin-left: 3rem;
+           overflow-y: hidden;
+        }
+        .subjectform{
+            background-color: #d2e397;
+            height: 200px;
+            /* padding: 0rem 2rem; */
+            margin: 0rem 1rem;
+        }
+        .subjectform p{
+            margin: 0.8rem 8px;
+            /* border: 2px solid black; */
+            text-align: center;
+        }
+        .subjectform .centerdiv{
+            width: 160px;
+        }
+        .subjectform h3{
+            margin: .9rem 8px;
+            font-size: 14px;
+        }
+        .subjectcom h1{
+            text-align: center; 
+          color: rgb(255, 0, 0);
+        }
+        .subjectcom p{
+            text-align: center;
+        }
+        .subjectcom .hoja{
+           padding-left: 5.2rem;
+           
+
+        }
+        .subjectcom .strong{
+            font-size: 14px;
+            padding-left: 2.5rem;
+        }
+        .adpdetails{
+            width: 320px;
+            height: 470px;
+            background-color: chartreuse;
+            box-sizing: border-box;
+            /* overflow-y: hidden; */
+            border-radius: 2rem;
+            border: 2px solid black;
+            padding-left: 2rem;
+            padding-right: 1rem;
+            font-size: 10px;
+            margin-left: 100px;
+            margin-right: 60px;
+        }
+        .adpdetails h2{
+            color: rgb(255, 60, 0);
+            text-align: center;
+            font-size: x-large;
+        }
+        .adpdetails h3{
+            text-align: center;
+            background-color: #007bff;
+            color: #ffff;
+            width: 14rem;
+            margin-left: 12px;
+        }
+        .exp h3{
+            padding-right: 5rem;
+        }
+#feeschedule{
+    width: 100%;
+    height: 1050px;
+    background-color: #C9C7D2;
+
+}
+#feeschedule h2{
+    background-color: #C9C7D2;
+    color: #f41d1d;
+    border: 1px solid #842c2c;
+    width: 12rem;
+    height: 5rem;
+    position: relative;
+    padding-left: 6px;
+    padding-top: 16px;
+    top: 7.5rem;
+    left:33.2rem;
+    border-bottom: none;
+}
+#feeschedule h1{
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    width: 400px;
+   position:relative;
+   left:25rem;
+   bottom: -3.5rem;
+   
+}
+.feeschedule{
+    width: 100%;
+    background-color: #C9C7D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #842c2c;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  /* background-color: #a7e3b9; */
+  color: #f41d1d;
+}
+
+
+
+
+
+
+@media (max-width:1025px){
+    .subjectcom .hoja{
+        padding-left: 2.1rem;
+    }
+    .subjectcom .strong{
+        font-size: 12px;
+        padding-left: 2rem;
+    }
+    #addmission{
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+    .subjectform .centerdiv{
+        width: 130px;
+    }
+    .subjectform{
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+    .subjectcom .hoja{
+        padding-left: 6.1rem;
+    }
+    .subjectcom .strong{
+        padding-left: 5.5rem;
+    }
+    .subjectform p{
+        margin: 0.5rem -3px;
+    }
+    .subjectform{
+        margin-right: 10px;
+    }
+    .adpdetails{
+        padding-left: 1rem;
+    }
+    #feeschedule h1{
+        margin-left: -6rem;
+    }
+    #feeschedule h2{
+        left: 24.6rem;
+        font-size: 20px;
+        width: 10.9rem;
+        padding-left: 12px;
+        padding-top: 24px;
+        border-right: none;
+    }
+    #HowToApply h1{
+        margin-top: 2.5rem;
+    }
+
+    .adpdetails{
+        margin-left: 3%;
+        margin-right: -20px;
+    }
+    .subjectcom{
+        margin-left: -33px;
+    }
+  
+    #HowToApply h1{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+    #feeschedule h1{
+        margin-left: -5rem;
+    }
+   
+    .exp h3{
+            padding-right: 0rem;
+            margin-left: -21rem;
+        }
+  .exp p{
+    margin-left: -5rem;
+  }
+}
+
+@media (max-width:915px){
+    .subjectcom .hoja{
+        padding-left: 4.1rem;
+    }
+    .subjectcom .strong{
+        padding-left: 3rem;
+    }
+    #feeschedule h1{
+        margin-left: -9rem;
+
+    }
+    #feeschedule h2{
+        left: 20.2rem;
+    }
+    #HowToApply h1{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:825px){
+    .addmission{
+        display: block;
+       
+    }
+    #addmission{
+        height: 1200px;
+    }
+    .subjectcom{
+        margin-left: 25px;
+        margin-top: 4rem;
+    }
+    .adpdetails{
+        margin-top: 5rem;
+        margin-left: 24rem;
+        font-size: 11px;
+    }
+    #addmission .exp{
+        width: 410px;
+       
+    }
+    .exp p{
+        padding-right: 5rem;
+        font-size: 12px;
+    }
+    .exp h3{
+        margin-left: -11rem;
+
+    }
+    .subjectcom .hoja{
+        padding-left: 7.1rem;
+
+    }
+    .subjectcom .strong{
+        margin-left: 4rem;
+    }
+    #feeschedule h1{
+        margin-left: -12.5rem;
+    }
+    #feeschedule h2{
+        font-size: 16px;
+        width: 7.9rem;
+        padding-left: 4px;
+        left: 18.8rem;
+    }
+    .University{
+        font-size: 13px;
+    }
+    .Note{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:770px){
+    #addmission .textp{
+font-size: 12px;
+    }
+    .adpdetails{
+        margin-left: 23rem;
+    }
+    #feeschedule h2{
+        font-size: 14px;
+        width: 6.9rem;
+        left: 18.7rem;
+    }
+    #HowToApply h1{
+        margin-top: 4rem;
+    }
+    .subjectcom{
+        margin-left: -2px;
+    }
+    #feeschedule h1{
+        margin-left: -13.5rem;
+    }
+}
+    @media (max-width:650px){
+        #addmission{
+            margin-top: 13rem;
+        }
+        .addmissionpage h1{
+            top: 6.6rem;
+        }
+        .subjectcom{
+            width: 600px;
+            margin-left: -40px;
+        }
+        #addmission .textp{
+            font-size: 11px;
+        }
+        .exp p{
+            padding-right: 16rem;
+        }
+        .adpdetails{
+            margin-left: 15rem;
+        }
+        .exp h3{
+            text-align: center;
+            margin-left: -21rem;
+          
+        }
+        #feeschedule h1{
+            margin-left: -15.5rem;
+            font-size: 19px;
+            width: 317px;
+            bottom: -4.5rem;
+        }
+        .feeschedule{
+           
+            margin-left: 0rem;
+        
+        }
+        .feeschedule table{
+            width: 600px;
+        }
+        #feeschedule h2{
+            left: 11.7rem;
+            width: 11.8rem;
+            font-size: 24px;
+        }
+        #HowToApply h1{
+            margin-top:  1rem;
+        }
+        .subjectcom .hoja{
+            padding-left: 5.1rem;
+        }
+        .subjectcom .strong{
+            margin-left: 2rem;
+        }
+        #scrollButton{
+            right: 23px;
+        }
+        .container .left .branding h4 span{
+            left: 89px;
+        }
+    }
+        @media (max-width:550px){
+        .addmissionpage img{
+            height: 350px;
+        }
+        .addmissionpage h1{
+            height: 350px; 
+        }
+        .container .left .branding h4 span{
+            left: 86px;
+        }
+        #addmission{
+            margin-top: 3rem;
+        }
+        #addmission .textp{
+            font-size: 9px;
+        }
+        .subjectcom{
+            width: 503px;
+        }
+        .subjectcom .hoja{
+            padding-left: 2.7rem;
+
+        }
+        .subjectcom .strong{
+            margin-left: -1rem;
+        }
+        #addmission .exp{
+            top: 24rem;
+        }
+        .adpdetails{
+            margin-left: 3rem;
+            margin-top: 4rem;
+        }
+        #addmission .exp{
+            width: 100%;
+        }
+        .exp p{
+            padding-right: 0rem;
+            top: 22rem;
+
+        }
+        .exp h3{
+            margin-left: -7rem;
+            
+        }
+        .exp p{
+            margin-left: -2rem;
+
+        }
+        #feeschedule h1{
+            margin-left: -18.5rem;
+        }
+        #feeschedule table{
+            width: 470px;
+        }
+        #feeschedule h2{
+            font-size: 14px;
+            width: 7rem;
+            left: 11.6rem;
+
+        }
+        #HowToApply h1{
+            margin-top: 2rem;
+        }
+        #footer p{
+            font-size: 8px;
+        }
+        }
+        @media (max-width:435px){
+            .addmissionpage img{
+                height: 290px;
+            }
+            .addmissionpage h1{
+                height: 290px; 
+            }
+            .addmissionpage{
+                height: 290px;
+            }
+            #addmission{
+                margin-top: 0rem;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            #addmission h1{
+            font-size: 20px;
+            }
+           
+        #textp2{
+           margin-left: 1rem;
+        }
+        .subjectcom{
+            width: 400px;
+            margin-left: 12px;
+            margin-top: 35px;
+            height: 250px;
+
+        }
+        .subjectcom .hoja{
+            margin-left: -17px;
+            font-size: 13px;
+        }
+        .subjectcom p{
+            font-size: 13px;
+        }
+        .subjectcom .strong{
+            font-size: 9px;
+        }
+        .subjectcom h3{
+            font-size: 10px;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .subjectform{
+            margin-top: -2rem;
+        }
+        #addmission .exp{
+            top: 21rem;
+        }
+        #addmission{
+            padding-bottom: 0px;
+            height: 1141px;
+        }
+        .firstnav .left{
+            font-size: 10px;
+        }
+        .firstnav{
+            padding-left: 15px;
+        }
+        #feeschedule h1{
+            margin-left: -21.5rem;
+        }
+        .feeschedule table{
+            width: 370px;
+        }
+        .feeschedule{
+            width: 370px;
+            margin-left: 2rem;
+        
+        }
+        #feeschedule{
+            height: 636px;
+        }
+        th, td{
+            padding: 2px;
+            font-size: 10px;
+           
+        }
+        #feeschedule h2{
+            height: 40px;
+            padding-top: 8px;
+            width: 8rem;
+            left: 7.9rem;
+            top: 3.8rem;
+           border: 1px solid #842c2c;
+           border-top: none;
+           border-right: none;
+           padding-left: 10px;
+        }
+        .University{
+            font-size: 10px;
+        }
+        .Note{
+            font-size: 10px;
+        }
+        #HowToApply h1{
+            margin-top: 0px;
+        }
+        #scrollButton{
+            right: 48px;
+            bottom: 51px;
+        
+        }
+        #footer p{
+            font-size: 6px;
+        }
+        }
+        
+        @media (max-width:415px){
+            #addmission .textp{
+                font-size: 8px;
+            }
+            #addmission h1{
+                font-size: 17px;
+            }
+            .subjectcom{
+                margin-left: 6px;
+            }
+            .exp p{
+               font-size: 11px;
+            }
+            .feeschedule{
+                margin-left: 1.3rem;
+            } 
+            #feeschedule h2{
+                left: 7.2rem;
+            }
+        }
+        @media (max-width:395px){
+            .subjectcom{
+                width: 350px;
+                margin-left: 19px;
+                height: 212px;
+            }
+            .subjectcom .hoja{
+                font-size: 12px;
+                margin-left: -27px;
+            }
+            .subjectcom p{
+                font-size: 12px;
+                margin-top: 9px;
+                margin-bottom: 0px;
+            }
+            .subjectcom .strong{
+                font-size: 8px;
+                margin-left: -1.5rem;
+            }
+            .subjectform h3{
+              font-size: 8px;
+              margin-bottom: 0px;
+               
+            }
+            .subjectcom p{
+                font-size: 9px;
+            }
+            .subjectform{
+                margin-top: -3rem;
+            }
+            .adpdetails{
+                margin-left: 2rem;
+            }
+            #feeschedule h1{
+                margin-left: -22.8rem;
+            }
+            #feeschedule table{
+                width: 283px;
+            }
+            th, td{
+                font-size: 7px;
+            }
+            .University{
+                font-size: 7px;
+            }
+            .Note{
+                font-size: 7px;
+            }
+            #feeschedule h2{
+                font-size: 10px;
+                width: 7rem;
+                height: 31px;
+                left: 6.8rem;
+                padding-top: 6px;
+                top: 2.9rem;
+                border: 1px solid #842c2c;
+                border-right: none;
+            }
+            .feeschedule{
+                margin-left: 0.3rem;
+            }
+            #feeschedule{
+                height: 488px;
+            }
+        }
+        @media (max-width:377px){
+            .subjectcom{
+            margin-left: 12px;
+            }
+            .adpdetails{
+                margin-left: 1.5rem;
+            }
+            .exp p{
+                margin-left: -2.5rem;
+            }
+            #scrollButton{
+                bottom: 38px;
+            }
+        }
+
+        @media (max-width:365px){
+            .subjectcom{
+                margin-left: 5px;
+            }
+            .firstnav .left span{
+                font-size: 7px;
+            }
+            #addmission .textp{
+                font-size: 7px;
+            }
+            .adpdetails{
+                margin-left: 1.2rem;
+            }
+            .exp p{
+                font-size: 10px;
+            }
+            #feeschedule h1{
+                margin-left: -23.8rem;
+            }
+            .feeschedule{
+                width: 346px;
+                margin-left: 0rem
+               
+            }
+            #feeschedule h2{
+                width: 6rem;
+                left: 6.7rem;
+            }
+            #scrollButton {
+                bottom: 37px;
+            }
+        }
+        @media (max-width:321px){
+            .addmissionpage img{
+                height: 220px;
+            }
+            .firstnav .left{
+                font-size: 7px;
+            }
+            .firstnav .right i{
+                margin-right: 12px;
+            }
+            .addmissionpage h1{
+                height: 220px;
+            }
+            #addmission{
+                margin-top: -41px;
+            }
+            #addmission .textp{
+                font-size: 6px;
+            }
+            #textp2{
+                margin-left: 1.5rem;
+            }
+            .subjectcom{
+                width: 270px;
+                margin-left: 24px;
+            }
+            #addmission h1{
+                font-size: 13px;
+                
+            }
+            .subjectcom .hoja{
+                font-size: 9px;
+            }
+            .subjectcom .strong{
+                font-size: 6px;
+            }
+            .subjectform h3{
+                font-size: 5px;
+            }
+            .subjectcom p{
+                font-size: 6px;
+                margin-top: 14px;
+            }
+            .adpdetails{
+              width: 280px;
+              font-size: 10px;
+            }
+            .exp p{
+                font-size: 9px;
+            }
+            #feeschedule h1{
+                width: 279px;
+                font-size: 17px;
+            }
+            .feeschedule{
+                width: 100%;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            #feeschedule h2{
+                left: 5.7rem;
+                width: 5.8rem;
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width:281px){
+            .subjectcom{
+                margin-left: 4px;
+            }
+            .adpdetails{
+                margin-left: 0rem;
+            }
+            .exp p{
+                font-size: 8px;
+            }
+            #feeschedule h1{
+                margin-left: -24.9rem;
+            }
+            .firstnav .left{
+                font-size: 5px;
+            }
+            #feeschedule h2{
+                font-size: 6px;
+                width: 3.9rem;
+            }
+        }
+
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="site-main-wrapper">
+        <button class="hamberger" >
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </button>
+        <div class="mobile-nav">
+            <button class="times">
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="staff.html">Staff</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
+                <li> <a href="addmission.html">Admissions</a></li>
+                <li> <a href="GALLERY.html">GALLERY</a></li>
+                <li class="contactus"> <a href="contact.html">CONTACT US</a></li>
+             
+            </ul>
+        </div>
+    <div  class="firstnav flex  items-center justify-between">
+        <div class="left">
+            HAVE ANY QUESTION ? : <span><i class="fa-solid fa-phone"></i> +923009672197</span>
+       </div>
+       <div class="search-container">
+        <div > 
+            <!-- <input type="text" id="search-input" placeholder="Search..."> -->
+            <!-- <button id="search-button">Search</button> -->
+        </div>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+       <div class="right">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-google-play"></i>
+       </div>
+    </div>
+    <header>
+        <div id="navbar"  class="container">
+
+        <nav  class="flex items-center justify-between ">
+            <div class="left flex items-center">
+                 <div class="branding">
+                    <img src="images/logo.jpg">
+                    <h4 class="items-center">GOVT. ASSOCIATE COLLEGE (BOYS) <br> <span>TRANDA محمد PANAH</span></h4>
+                 </div>
+                 <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="staff.html">Staff</a>
+                    <a href="index.html#feedback">Feedback</a>
+                    <a href="">Admissions</a>
+                    <a href="GALLERY.html">GALLERY</a>
+                 </div>
+            </div>
+            <div  class="right">
+                <a href="contact.html">
+                    <button class="btn btn-primary">CONTACT</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="addmissionpage">
+        <img src="gallery/prospectus img for addmision section .jpg">
+        <h1>ADMISSIONS</h1>
+    </div>
+    </header>
+                     <!-- About.html -->
+
+    <section id="addmission">
+        <h1>ADMISSION POLICY/PROCEDURE</h1>
+        <p class="textp" style="text-align: center;">1. Only male students are eligible to get admission in intermediate and  degree  classes.</p>
+        <p class="textp" id="textp2" >2. Fresh students will be preferred.</p>
+        <p class="textp" style="text-align: center;">3. Students seeking admission at various level will buy a prospectus from the college office. <br> After reading it carefully, they will choose their subject and fill the admission form. They will <br>
+            complete their documents and submit the complete file in office and  get a receipt. </p>
+            <div  class="addmission flex justify-center items-center">
+             <div class="subjectcom">
+                <h1>SUBJECT COMBINATION F.Sc/F.A/I.C.S</h1>
+                <strong class="hoja">COMPULSORY SUBJECTS FOR INTERMEDIATE CLASSES</strong>
+                <p>1. English 2. Urdu 3. Islamiat (Comp) 4: Pakistan Studies</p>
+                <strong class="strong">Elective Subjects for Science Student: Choose one Group the Followings</strong>
+                <div class="subjectform flex justify-between items-center">
+                 
+                    <div style="text-align: center;">
+                   
+                   <h3>Pre-Medical
+                    </h3>
+                    <h3>Pre-Engineering</h3>
+                   <h3>I.C.S</h3> 
+                   <h3>ARTS</h3> 
+                    </div>
+                    <div>
+                        <p style=" text-align: center;">Physics</p>
+                       <p>Physics</p>
+                        <p>Computer</p>
+                        <p>Saraiki</p> 
+                    </div>
+                    <div  class="centerdiv">
+                        <p>Chemistry</p>
+                        <p>Chemistry</p>
+                        <p>Physics</p>
+                        <p>H & Ph Education</p>
+                    </div>
+                    
+
+                    <div>
+                        <p>Biology</p>
+                        <p>Mathematics</p>
+                        <p>Mathematics</p>
+                        <p>Islamiat Elective</p>
+                    </div>
+                <!-- </table> -->
+                </div>
+
+             </div>
+             <div class="adpdetails">
+                <h2>ADP/ADS</h2>
+                <h3>1ST. SEMESTER</h3>
+                <p>
+                    1.English Structure <br>
+                    2. IT Skills  <br>
+                    3.Statistics <br>
+                    4. Natural Sciences <br>
+                    5. Social Sciences <br>
+                    6.ART& Humanities <br>
+                </p>
+                <h3>2nd. SEMESTER</h3>
+                <p>1. English Literature <br>
+
+                    2. Critical Thinking & Reasoning <br>
+                    
+                    3. Basic Health Awareness <br>
+                    
+                    4. Natural Science <br>
+                    
+                    5. Social Science <br>
+                    
+                    6. ART& Humanities <br>
+                    Note: Optional subjects will be opted on the bases of availability <br>of teaching staff from the list issued by University.
+                </p>
+            <h3>3rd. SEMESTER</h3>
+            <p>
+                1. English Communication skills <br>
+
+               2. Islamic Studies <br>
+
+               3. Pak Studies. <br>
+
+               4. Constitutional legal system of Pakistan. <br>
+
+               5. Subject * <br>
+            </p>
+            <h3>4th. SEMESTER</h3>
+            <p>Subject</p>
+             </div>
+            </div>
+            <div class="exp">
+                 <h3 style="text-align: center; color: #007bff;">EXPLANATION</h3>
+                 <p> <strong style="color: rgb(255, 10, 10);">*Subject = </strong>The word subject represent all the different disciplines <br> that are offered in a college, and which have been approved by <br> BISE Bahawalpur and Islamia University of Bahawalpur,</p>
+            </div>
+           
+    </section>
+    <hr style="width: 100%;border: 1px solid black; text-align: center;">
+
+
+ <section id="feeschedule">
+      <h1> FEE SCHEDULE INTER/ADS/ADP </h1>
+      <h2>Admission Fee</h2>
+      <div class="feeschedule">
+ <table>
+<tr>
+    <th>S.NO</th>
+    <th>FUND</th>
+    <TH>INTER</TH>
+    <TH>ADS/ADP</TH>
+</tr>
+<TR>
+    <TD style="color: #f41d1d;">1</TD>
+    <TD>ARTS</TD>
+    <TD>80</TD>
+    <TD>225</TD>
+</TR>
+<tr>
+    <TD style="color: #f41d1d;">2</TD>
+    <TD>SCIENCE</TD>
+    <TD>65</TD>
+    <TD>175</TD>
+</tr>
+  <tr>
+    <TD style="color: #f41d1d;">3</TD>
+    <TD>Tuition Fee</TD>
+    <TD>600</TD>
+    <TD>720</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">4</TD>
+    <TD>Science Breakage Fund</TD>
+    <TD>60</TD>
+    <TD>120</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">5</TD>
+    <TD>Registration Fee </TD>
+    <TD>According to board</TD>
+    <TD class="University">According to University</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">6</TD>
+    <TD>College Welfare Fund </TD>
+    <TD>50</TD>
+    <TD>50</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">7</TD>
+    <TD>General Fund </TD>
+    <TD>50</TD>
+    <TD>50</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">8</TD>
+    <TD> Medical Fund </TD>
+    <TD>50</TD>
+    <TD>50</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">9</TD>
+    <TD>Hilal-e-Ahmer Fund    </TD>
+    <TD>60</TD>
+    <TD>60</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">10</TD>
+    <TD>Magazine Fund</TD>
+    <TD>120</TD>
+    <TD>120</TD>
+  </tr>
+
+  
+  <tr>
+    <TD style="color: #f41d1d;">11</TD>
+    <TD>Library Security Fund Computer Fund</TD>
+    <TD>500</TD>
+    <TD>500</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">12</TD>
+    <TD>Computer Fund  </TD>
+    <TD>300</TD>
+    <TD>400</TD>
+  </tr>
+
+
+  <tr>
+    <TD style="color: #f41d1d;">13</TD>
+    <TD>Transport Fund    </TD>
+    <TD>150</TD>
+    <TD>150</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">14</TD>
+    <TD>Examination Fund </TD>
+    <TD>180</TD>
+    <TD>180</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">15</TD>
+    <TD>Board University Affiliation Fund</TD>
+    <TD>240</TD>
+    <TD>360</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">16</TD>
+    <TD>Sports Fund</TD>
+    <TD>180</TD>
+    <TD>180</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">17</TD>
+    <TD>Parking Fund </TD>
+    <TD>100</TD>
+    <TD>100</TD>
+  </tr>
+
+  <tr>
+    <TD style="color: #f41d1d;">18</TD>
+    <TD>Identity Card Fund</TD>
+    <TD>50</TD>
+    <TD>50</TD>
+  </tr>
+  <tr>
+    <TD></TD>
+    <TD class="Note">نوٹ: بور ڈ رجسٹریشن فیس بورڈ کی مقرر کردہ شرح کے مطابق وصول کی جائے گی ۔ 50 روپے فی پریکٹیکل مضمون</TD>
+    <TD style="color: #f41d1d;">Total</TD>
+    <TD></TD>
+  </tr>
+ </table>
+</div>
+ </section>
+
+<section id="HowToApply">
+    <h1>How To Apply</h1>
+    <div class="HowToApply">
+         <img src="images/How-to-apply-in-gacwtmp.jpg">
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+                    
+      <!-- start footer section  -->
+      <section id="footer">
+        <div class="copyright"> <p>© 2023 Govt. Associate College (Boys) TMP All Right Resevered <br> Developed BY <span><a href="https://muhammadafzal63.github.io/Portfolio/">Muhammad Afzal</a></span></p> </div>
+        
+        <button id="scrollButton"><i class="fa-solid fa-arrow-up"></i></button>
+        </section>
+    </div>
+                <!-- end  footer section -->
+        <!-- Other HTML content -->
+        <script>
+            document.getElementById("scrollButton").addEventListener("click", function() {
+        smoothScrollToTop(1000); // 10 seconds for smooth scroll
+    });
+
+    function smoothScrollToTop(duration) {
+        const startingY = window.pageYOffset;
+        const targetY = 0;
+        const distance = targetY - startingY;
+        const startTime = performance.now();
+
+        function step(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const scrollY = easeInOut(elapsedTime, startingY, distance, duration);
+            window.scrollTo(0, scrollY);
+            if (elapsedTime < duration) {
+                requestAnimationFrame(step);
+            }
+        }
+
+        function easeInOut(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(step);
+    }
+
+        
+                //  for mobilenav slide 
+document.addEventListener("DOMContentLoaded", function () {
+    const hamberger = document.querySelector(".hamberger");
+    const times= document.querySelector(".times");
+    const mobilenav = document.querySelector(".mobile-nav");
+
+    hamberger.addEventListener("click", function () {
+    mobilenav.classList.add('open')
+    });
+
+    times.addEventListener("click", function () {
+        mobilenav.classList.remove('open')
+    });
+});
+        </script>
+</body>
+</html>

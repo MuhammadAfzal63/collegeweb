@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="icon" type="img/icon" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .staffimgbox img{
+            height: 600px;
+        }
+        .staffimgbox h1{
+            height: 600px;
+            width: 100%;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute; 
+            top: 10rem;
+            background-color: rgba(0, 0, 0, 0.47);
+            color: white;
+            
+        }
+        #staff{
+          height: 100%;
+            background-color: #efefef;
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 5rem;
+            padding-top: 3rem;
+            display: grid;
+            place-items: center;
+        }
+        .tital-box{
+            text-align: center;
+            margin: 100px auto;
+        }
+        .tital-box p{
+            margin-top: 10px;
+            line-height: 24px;
+        }
+.team-row{
+    width: 100%;
+    height: 100%;
+    padding-left: 11%;
+    padding-right: 11%;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+    .profile-box{
+        width: 280px;
+        height: 174px;
+        background-color: #ffff;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 10px 10px rgba(115,193,255,0.1);
+        padding: 20px 15px;
+        position: relative;
+        margin: 1rem 1rem;
+    }
+    .profile-box img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        border-radius: 4px;
+    }
+    .profile-box h4{
+        color: #2196f3;
+        margin-bottom: 5px;
+    }
+    small{
+        color: #555;
+    }
+    .social-box{
+        background-color: #2196f3;
+        margin: 60px auto 20px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .social-box i{
+        margin: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .profile-box p {
+        font-size: xx-small;
+        padding-bottom: 10px;
+        color: #555;
+    }
+
+    @media (max-width:1025px){
+      .team-row{
+        padding: 0 2rem;
+      }
+    }
+    @media (max-width:915px){
+      .team-row{
+        padding: 0 1rem;
+        
+      }
+      .profile-box{
+        margin: 5px 5px;
+      }
+      
+    }
+    @media (max-width:825px){
+      .team-row{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .profile-box{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @media (max-width:770px){
+      .staffimgbox img{
+        height: 481px;
+      }
+      .staffimgbox h1{
+        height: 481px;
+      }
+      #staff{
+        margin-top: -20px;
+      }
+      .team-row{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .profile-box{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    @media (max-width:645px){
+      .staffimgbox h1{
+        top: 6.5rem;
+      }
+      #staff{
+        margin-top: 137px;
+      }
+      .profile-box{
+        margin-top: .7rem;
+        margin-bottom: .7rem;
+      }
+    
+      .copyright p{
+        font-size: 9px;
+      }
+    }
+
+    @media (max-width:545px){
+      .staffimgbox img{
+        height: 400px;
+        
+      }
+      .staffimgbox h1{
+        height: 400px;
+      }
+      #staff{
+        margin-top: 59px;
+        justify-content: center;
+      }
+      .tital-box{
+        margin: 3rem auto;
+      }
+      .tital-box p{
+        font-size: 15px;
+      }
+      .team-row{
+        grid-template-columns: repeat(1,1fr);
+      }
+      .profile-box{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      #scrollButton{
+        right: 4px;
+      }
+    }
+    @media (max-width:435px){
+      .firstnav .left{
+        font-size: 9px;
+      }
+      .firstnav{
+        padding-left: 10px;
+      }
+      .staffimgbox img{
+        height: 300px;
+      }
+      .staffimgbox h1{
+        height: 300px;
+        top: 6.6rem; 
+      }
+      #staff{
+        margin-top: 0px;
+      }
+      .tital-box p{
+        font-size: 11px;
+      }
+      .copyright p br{
+        display: block;
+      }
+    }
+    @media (max-width:391px){
+      #scrollButton{
+        bottom: 50px;
+        right: 0px;
+
+      }
+}
+    @media (max-width:377px){
+      .staffimgbox h1{
+        height: 250px;
+      }
+      .staffimgbox img{
+        height: 250px;
+      }
+      #staff{
+        margin-top: -11px;
+
+      }
+      .tital-box p{
+        font-size: 10px;
+      }
+      .team-row{
+       padding-left: 0px;
+       padding-right: 0px;
+      }
+      #scrollButton{
+        bottom: 50px;
+        right: 0px;
+
+      }
+    }
+    @media (max-width:321px){
+      .staffimgbox img{
+      height: 200px;
+    }
+    .staffimgbox h1{
+      height: 200px;
+    }
+    #staff{
+      margin-top: -61px;
+    }
+    .tital-box p{
+      font-size: 8px;
+    }
+    .profile-box{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+      }
+      #scrollButton{
+        right: 8px;
+      }
+      .team-row{
+        padding-left: 11px;
+      }
+    }
+    @media (max-width:377px){
+      .team-row{
+        padding-left: 0px;
+      }
+      .copyright p{
+        font-size: 7px;
+      }
+      .firstnav .left{
+        font-size: 7px;
+      }
+    }
+  
+
+
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="site-main-wrapper">
+        <button class="hamberger" >
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </button>
+        <div class="mobile-nav">
+            <button class="times">
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="staff.html">Staff</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
+                <li> <a href="addmission.html">Admissions</a></li>
+                <li> <a href="GALLERY.html">GALLERY</a></li>
+                <li class="contactus"> <a href="contact.html">CONTACT US</a></li>
+             
+            </ul>
+        </div>
+    <div  class="firstnav flex  items-center justify-between">
+        <div class="left">
+            HAVE ANY QUESTION ? : <span><i class="fa-solid fa-phone"></i>+923009672197</span>
+       </div>
+       <div class="search-container">
+        <div > 
+            <!-- <input type="text" id="search-input" placeholder="Search..."> -->
+            <!-- <button id="search-button">Search</button> -->
+        </div>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+       <div class="right">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-google-play"></i>
+       </div>
+    </div>
+    <header>
+        <div id="navbar"  class="container">
+
+        <nav  class="flex items-center justify-between ">
+            <div class="left flex justify-center items-center">
+                 <div class="branding">
+                    <img src="images/logo.jpg">
+                    <h4 class="items-center">GOVT. ASSOCIATE COLLEGE (BOYS) <br> <span>TRANDA محمد PANAH</span></h4>
+                 </div>
+                 <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Staff</a>
+                    <a href="index.html#feedback">Feedback</a>
+                    <a href="addmission.html">Admissions</a>
+                    <a href="GALLERY.html">GALLERY</a>
+                 </div>
+            </div>
+            <div  class="right">
+                <a href="contact.html">
+                    <button class="btn btn-primary">CONTACT</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="staffimgbox">
+          <img src="image1.jpg.webp">
+          <h1>STAFF</h1>
+    </div>
+    </header>
+                     <!-- About.html -->
+<section id="staff">
+    <div class="tital-box">
+        <h1>Meet Our Staff</h1>
+        <p>Get to know our dedicated and skilled team, committed to fostering <br> excellence and guiding our students to success</p>
+
+    </div>
+    <div class="team-row">
+
+
+        <div class="profile-box">
+          <h4>PROF.QAZI <br> MUHAMMAD AYUB</h4>
+          <small style="color:#2196f3; "> PRINCIPAL</small>
+          <p>Assistant Professor <br>M.phil Urdu
+          </p>
+          <img src="gallery/prof. qazi muhammad ayub.png">
+          <div class="social-box" style="    margin: 0px auto 20px">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+
+
+
+        <div class="profile-box">
+            <h4>PROF. <br>UBAID ULLAH</h4>
+            <small style="color:#2196f3; "> 
+            VICE PRINCIPAL</small>
+            <p>Assistant Professor <br>M.phil Saraiki </p>
+            <img src="gallery/pro. ubaid ullah.png">
+            <div class="social-box" style="    margin: 0px auto 20px   ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+            
+
+
+          <div class="profile-box">
+            <h4 style="font-size: 15px;">SHAMSHAD AHMAD</h4>
+            <small style="color:#2196f3;">Lecturer in Physical <br> Education</small>
+            <p>MSc Phy. Education</p>
+            <img src="gallery/pro._shamshad_ahmed-removebg-preview.png">
+            <div class="social-box"     style="    margin: 12px auto 20px;            ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+  
+          <div class="profile-box">
+            <h4 style="font-size: 14px;">MUHAMMAD YOUNIS</h4>
+            <small style="color:#2196f3;">Lecturer in Commerce</small>
+            <p>Master in Commerce</p>
+            <img src="gallery/younis_sb-removebg-preview.png">
+            <div class="social-box" style="    margin: 38px auto 20px;            ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+            
+
+
+          <div class="profile-box">
+            <h4>RAFIQUE AHMAD</h4>
+            <small  style="color:#2196f3; ">LIBRARIAN</small>
+            <p>M.A Library and  <br> Information Science  </p>
+            <img src="gallery/malik rafique ahmad.png">
+            <div class="social-box" style="    margin: 23px auto 20px;">
+              <a href="https://www.facebook.com/malik.rafiqnaich?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/rafiqmalik01?t=Yi4eUe5K1yjMCZUdo51IDg&s=08"><i class="fa-brands fa-twitter"></i></a>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="profile-box">
+            <h4 style="font-size: 11.5px;">RANA SHAHID SHAMSHAD</h4>
+            <small style="color:#2196f3; ">Lecturer in Education</small>
+            <p>M.Phil. Education</p>
+            <img src="gallery/GALLERY IMG 16 VERTICAL.jpg">
+            <div class="social-box" style="    margin: 40px auto 20px">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+
+          <div class="profile-box">
+            <h4 style="font-size: 13.5px;">MUHAMMAAD AKRAM</h4>
+            <small style="color:#2196f3; ">Lecturer in Economics</small>
+            <p> M.phil Economics</p>
+            <img src="gallery/muhammad akram photo.jpg">
+            <div class="social-box" style="    margin: 38px auto 20px;
+            ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+         
+          
+                                                                
+    </div>
+    <!-- <img src="gallery/ministrial staf.jpg"> -->
+</section>
+
+
+
+<section id="staff" class="ministrialstaff">
+  <div class="tital-box">
+      <h1>MINISTERIAL STAFF</h1>
+  </div>
+  <div class="team-row">
+
+
+
+      <div class="profile-box">
+        <h4>JALIL AHMED KHAN</h4>
+        <small style="color:#2196f3; ">Head Clerk</small>
+        <p>M.A</p>
+        <img src="images/JALIL AHMAD KHAN .JPG">
+        <div class="social-box" style="    margin: 36px auto 20px">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+
+
+
+
+      <div class="profile-box">
+          <h4>IHTSHAM AKBAR</h4>
+          <small style="color:#2196f3; "> Admin officer
+          </small>
+          <p>B.A/B.ed </p>
+          <img src="images/IHTSHAM AKBAR.JPG">
+          <div class="social-box" style="        margin: 36px auto 20px;          ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+          
+
+
+        <div class="profile-box">
+          <h4 style="font-size: 15px;">MUHAMMAD ALTAF </h4>
+          <small style="color:#2196f3;">Mali</small>
+          <p>B.A</p>
+          <img src="gallery/pro._shamshad_ahmed-removebg-preview.png">
+          <div class="social-box"     style="    margin: 12px auto 20px;            ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="profile-box">
+          <h4 style="font-size: 14px;" >HAFIZ MUHAMMAD JUNAID <h4>
+          <small style="color:#2196f3;">Mali</small>
+          <p>Matric</p>
+          <img src="gallery/younis_sb-removebg-preview.png">
+          <div class="social-box" style="    margin: 38px auto 20px;            ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+
+
+        <div class="profile-box">
+          <h4>ALLAH NAWAZ</h4>
+          <small  style="color:#2196f3; "></small>Choukidar</small>
+          <p>F.A  </p>
+          <img src="gallery/malik rafique ahmad.png">
+          <div class="social-box" style="    margin: 23px auto 20px;">
+            <a href="https://www.facebook.com/malik.rafiqnaich?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/rafiqmalik01?t=Yi4eUe5K1yjMCZUdo51IDg&s=08"><i class="fa-brands fa-twitter"></i></a>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+      </div>
+
+      <div class="profile-box">
+          <h4 style="font-size: 11.5px;">MUHAMMAD UMAIR HAKEEM</h4>
+          <small style="color:#2196f3; ">Lab Attendent</small>
+          <p>F.A</p>
+          <img src="gallery/GALLERY IMG 16 VERTICAL.jpg">
+          <div class="social-box" style="    margin: 40px auto 20px">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+
+        <div class="profile-box">
+          <h4 style="font-size: 13.5px;">ISLAM HUSSAIN</h4>
+          <small style="color:#2196f3; ">Choukidar</small>
+          <p> B.A</p>
+          <img src="gallery/muhammad akram photo.jpg">
+          <div class="social-box" style="    margin: 38px auto 20px;
+          ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+       
+        
+
+        <div class="profile-box">
+          <h4 style="font-size: 13.5px;">HAROON LATIF</h4>
+          <small style="color:#2196f3; ">Lab Attendent</small>
+          <p>F.A</p>
+          <img src="gallery/muhammad akram photo.jpg">
+          <div class="social-box" style="    margin: 38px auto 20px;
+          ">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+                                                              
+  </div>
+  <!-- <img src="gallery/ministrial staf.jpg"> -->
+</section>
+     <!-- start footer section  -->
+     <section id="footer">
+      <div class="copyright"> <p>© 2023 Govt. Associate College (Boys) TMP All Right Resevered <br> Developed BY <span><a href="https://muhammadafzal63.github.io/Portfolio/">Muhammad Afzal</a></span></p> </div>
+      
+      <button id="scrollButton"><i class="fa-solid fa-arrow-up"></i></button>
+      </section>
+    </div>
+   
+                <!-- end  footer section -->
+        <!-- Other HTML content -->
+        <script>
+            document.getElementById("scrollButton").addEventListener("click", function() {
+        smoothScrollToTop(1000); // 10 seconds for smooth scroll
+    });
+
+    function smoothScrollToTop(duration) {
+        const startingY = window.pageYOffset;
+        const targetY = 0;
+        const distance = targetY - startingY;
+        const startTime = performance.now();
+
+        function step(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const scrollY = easeInOut(elapsedTime, startingY, distance, duration);
+            window.scrollTo(0, scrollY);
+            if (elapsedTime < duration) {
+                requestAnimationFrame(step);
+            }
+        }
+
+        function easeInOut(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(step);
+    }
+
+        
+                //  for mobilenav slide 
+document.addEventListener("DOMContentLoaded", function () {
+    const hamberger = document.querySelector(".hamberger");
+    const times= document.querySelector(".times");
+    const mobilenav = document.querySelector(".mobile-nav");
+
+    hamberger.addEventListener("click", function () {
+    mobilenav.classList.add('open')
+    });
+
+    times.addEventListener("click", function () {
+        mobilenav.classList.remove('open')
+    });
+});
+        </script>
+</body>
+</html>

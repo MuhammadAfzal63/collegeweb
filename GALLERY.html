@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="icon" type="img/icon" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+header{
+    background-color: var(--white);
+    height: 0px;
+    width: 100%;
+  
+
+} 
+#PHOTOGALLERY{
+        width: 100%;
+        height: 100%;
+        
+    }
+#PHOTOGALLERY .container .img1{
+   margin: 1rem;
+}
+#PHOTOGALLERY .container .img1 img{
+    height: 180px;
+    width: 250px;
+    transition: filter 0.3s;
+   
+}
+#PHOTOGALLERY .container .img1 img:hover{
+    filter: sepia(70%);
+}
+
+#prevButton{
+    position: relative;
+    margin-left: 3rem;
+    float: left;
+    margin-top: -7rem;
+    width: 65px;
+    height: 65px;
+    background-color:#00000066;
+    color:var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    z-index: 1;
+    top: -15.4rem;
+    opacity: 1;
+
+  
+}
+#prevButton:hover{
+    background-color: #48e1dc;
+    border: hidden;
+    outline: none;
+   color: var(--black);
+}
+#nextButton{
+    position: relative;
+    margin-right: 3rem;
+    float: right;
+    margin-top: -7rem;
+  width: 65px;
+    height: 65px;
+    background-color:#00000066;
+    color:var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    z-index: 1;
+    top: -15.4rem;
+    opacity: 1;
+   
+}
+#nextButton:hover{
+    background-color: #48e1dc;
+    border: hidden;
+    outline: none;
+   color: var(--black);
+}
+
+@media (max-width:1025px){
+    #PHOTOGALLERY{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #PHOTOGALLERY .container{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    #PHOTOGALLERY .container .img1 img{
+        width: 310px;
+    }
+}
+@media (max-width:915px){
+    #PHOTOGALLERY .container{
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+   
+}
+@media (max-width:645px){
+    #PHOTOGALLERY .container .img1{
+        margin: 0rem;
+    }
+    #PHOTOGALLERY .container .img1 img{
+        margin: 0px;
+    }
+    .copyright p{
+        font-size: 9px;
+    }
+}
+@media (max-width:545px){
+    #PHOTOGALLERY .container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3rem;
+    }
+    #scrollButton{
+        right: 5px;
+    }
+}
+@media (max-width:435px){
+    .firstnav .left{
+        font-size: 9px;
+    }
+    .firstnav{
+        padding-left: 15px;
+       
+    }
+    .copyright p br{
+        display: block;
+    }
+}
+@media (max-width:377px){
+    #PHOTOGALLERY p{
+        font-size: 12px;
+    }
+    #PHOTOGALLERY .container{
+        row-gap: 2rem;
+    }
+    #scrollButton{
+        right: 0px;
+        bottom: 51px;
+    }
+}
+@media (max-width:361px){
+    #PHOTOGALLERY .container{
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width:321px){
+    #PHOTOGALLERY .container{
+        row-gap: .1rem;
+    }
+    #scrollButton{
+        right: 8px;
+    }
+
+}
+@media (max-width:281px){
+    #PHOTOGALLERY{
+        padding: 0px;
+       margin-right: 0%S;
+    }
+    #PHOTOGALLERY .container .img1 img{
+        width: 279px;
+    }
+    .copyright p{
+        font-size: 7px;
+    }
+    .firstnav{
+        padding-left: 5px;
+    }
+    .firstnav .left{
+        font-size: 7px;
+        
+    }
+ 
+}
+
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="site-main-wrapper">
+        <button class="hamberger" >
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </button>
+        <div class="mobile-nav">
+            <button class="times">
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="staff.html">Staff</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
+                <li> <a href="addmission.html">Admissions</a></li>
+                <li> <a href="GALLERY.html">GALLERY</a></li>
+                <li class="contactus"> <a href="contact.html">CONTACT US</a></li>
+             
+            </ul>
+        </div>
+    <div  class="firstnav flex  items-center justify-between">
+        <div class="left">
+            HAVE ANY QUESTION ? : <span><i class="fa-solid fa-phone"></i>  +923009672197</span>
+       </div>
+       <div class="search-container">
+        <div > 
+            <!-- <input type="text" id="search-input" placeholder="Search..."> -->
+            <!-- <button id="search-button">Search</button> -->
+        </div>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+       <div class="right">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-google-play"></i>
+       </div>
+    </div>
+    <header>
+        <div id="navbar"  class="container">
+
+        <nav  class="flex items-center justify-between ">
+            <div class="left flex items-center">
+                 <div class="branding">
+                    <img src="images/logo.jpg">
+                    <h4 class="items-center">GOVT. ASSOCIATE COLLEGE (BOYS) <br> <span>TRANDA محمد PANAH</span></h4>
+                 </div>
+                 <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="staff.html">Staff</a>
+                    <a href="index.html#feedback">Feedback</a>
+                    <a href="addmission.html">Admissions</a>
+                    <a href="#">GALLERY</a>
+                 </div>
+            </div>
+            <div  class="right">
+                <a href="contact.html">
+                    <button class="btn btn-primary">CONTACT</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+</header>
+    <section id="PHOTOGALLERY">
+        <h1>GALLERY</h1>
+        <p>some glimpses of events in the college.</p>
+                <div class="container grid  ">
+                    <!-- <div class="topimgbx flex justify-between justify-center"> -->
+                        <div class="img1">
+                          <img src="gallery/GALLERY IMG 1.jpg" onclick="openLightbox('gallery/GALLERY IMG 1.jpg')">
+                        </div>
+    
+                        <div class="img1">
+                            <img src="gallery/GALLERY IMG 2.jpg" onclick="openLightbox('gallery/GALLERY IMG 2.jpg')">
+                         </div>
+    
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 3.jpg" onclick="openLightbox('gallery/GALLERY IMG 3.jpg')">
+                         </div>
+    
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 4.jpg" onclick="openLightbox('gallery/GALLERY IMG 4.jpg')" >
+                         </div>
+    
+                    <!-- </div> -->
+    
+                    <!-- <div class="bottomimgbx flex justify-between justify-center"> -->
+    
+                        <div class="img1">
+                            <img src="gallery/GALLERY IMG 5.jpg" onclick="openLightbox('gallery/GALLERY IMG 5.jpg')" >
+                         </div>
+    
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 6.jpg" onclick="openLightbox('gallery/GALLERY IMG 6.jpg')">
+                         </div>
+    
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 7.jpg" onclick="openLightbox('gallery/GALLERY IMG 7.jpg')" >
+                         </div>
+    
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 8.jpg" onclick="openLightbox('gallery/GALLERY IMG 8.jpg')">
+                         </div>
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 9 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 9 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 10 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 10 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 11 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 11 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 12 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 12 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 13 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 13 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 14 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 14 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 15 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 15 VERTICAL.JPG')">
+                         </div>
+
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 16 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 16 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 17 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 17 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 18 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 18 VERTICAL.JPG')">
+                         </div>
+
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 19 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 19 VERTICAL.JPG')">
+                         </div>
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 20 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 20 VERTICAL.JPG')">
+                         </div>
+
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 20 VERTICAL.JPG" onclick="openLightbox('gallery/GALLERY IMG 20 VERTICAL.JPG')">
+                         </div>
+
+
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 21 VERTICAL.jpg" onclick="openLightbox('gallery/GALLERY IMG 21 VERTICAL.jpg')">
+                         </div>
+                        
+
+                         <div class="img1">
+                            <img src="gallery/GALLERY IMG 22.jpg" onclick="openLightbox('gallery/GALLERY IMG 22.jpg')">
+                         </div>
+                         
+                    <!-- </div> -->
+                 </div>
+ 
+
+</section>
+<div id="lightbox" class="lightbox">
+    <span onclick="closeLightbox()" style="position: absolute; top: 15px; right: 60px; color: white; font-size: 30px; cursor: pointer;">&times;</span>
+    <img id="lightboxImage" src="" alt="Lightbox Image">
+    <button id="prevButton" onclick="showPrevImage()"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
+<button id="nextButton" onclick="showNextImage()"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="footer">
+    <div class="copyright" id="lightboxtext"> <p>© 2023 Govt. Associate College (Boys) TMP All Right Resevered <br> Developed BY <span><a href="https://muhammadafzal63.github.io/Portfolio/">Muhammad Afzal</a></span></p> </div>
+    <button id="scrollButton"><i class="fa-solid fa-arrow-up"></i></button>
+    </section>
+        </section>
+    </div>
+                <!-- end  footer section -->
+        <!-- Other HTML content -->
+        <script>
+ 
+    var currentImageIndex = 0;
+    var images = [
+        "gallery/GALLERY IMG 1.jpg",
+        "gallery/GALLERY IMG 2.jpg",
+        "gallery/GALLERY IMG 3.jpg",
+        "gallery/GALLERY IMG 4.jpg",
+        "gallery/GALLERY IMG 5.jpg",
+        "gallery/GALLERY IMG 6.jpg",
+        "gallery/GALLERY IMG 7.jpg",
+        "gallery/GALLERY IMG 8.jpg",
+        "gallery/GALLERY IMG 9 VERTICAL.JPG",
+        "gallery/GALLERY IMG 10 VERTICAL.JPG",
+        "gallery/GALLERY IMG 11 VERTICAL.JPG",
+        "gallery/GALLERY IMG 12 VERTICAL.JPG",
+        "gallery/GALLERY IMG 13 VERTICAL.JPG",
+        "gallery/GALLERY IMG 14 VERTICAL.JPG",
+        "gallery/GALLERY IMG 15 VERTICAL.JPG",
+        "gallery/GALLERY IMG 16 VERTICAL.JPG",
+        "gallery/GALLERY IMG 17 VERTICAL.JPG",
+        "gallery/GALLERY IMG 18 VERTICAL.JPG",
+        "gallery/GALLERY IMG 19 VERTICAL.JPG",
+        "gallery/GALLERY IMG 20 VERTICAL.JPG",
+        "gallery/GALLERY IMG 20 VERTICAL.JPG",
+        "gallery/GALLERY IMG 21 VERTICAL.jpg",
+        "gallery/GALLERY IMG 22.jpg",
+        // ... add other image paths here
+    ];
+
+    function openLightbox(imageSrc) {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImage = document.getElementById('lightboxImage');
+        var lightboxtext = document.getElementById('lightboxtext');
+        var prevButton = document.getElementById('prevButton');
+        var nextButton = document.getElementById('nextButton');
+
+        lightboxImage.src = imageSrc;
+        document.getElementById("lightboxtext").style.display = "none";
+
+        // Check if the current image is vertical or horizontal
+        var isVertical = isImageVertical(imageSrc);
+        updateLightboxLayout(isVertical);
+
+        // Display previous and next buttons
+        prevButton.style.display = 'block';
+        nextButton.style.display = 'block';
+
+        lightbox.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        var lightbox = document.getElementById('lightbox');
+        var prevButton = document.getElementById('prevButton');
+        var nextButton = document.getElementById('nextButton');
+
+        document.getElementById("lightboxtext").style.display = "block";
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+
+        // Hide previous and next buttons when closing
+        prevButton.style.display = 'none';
+        nextButton.style.display = 'none';
+    }
+
+    function isImageVertical(imageSrc) {
+        // Implement logic to determine if the image is vertical or horizontal
+        // You can use the image dimensions or any other criteria
+        // For simplicity, assuming vertical if the image name contains 'VERTICAL'
+        return imageSrc.includes('VERTICAL');
+    }
+
+    function updateLightboxLayout(isVertical) {
+    var lightboxImage = document.getElementById('lightboxImage');
+
+    if (isVertical) {
+        lightboxImage.style.width = 'auto';
+        lightboxImage.style.height = '90vh'; // Set the height you desire
+    } else {
+        lightboxImage.style.width = '80vw'; // Set the width you desire
+        lightboxImage.style.height = '90vh';
+    }
+
+    // // Center the image vertically
+    // var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    // var imageHeight = lightboxImage.offsetHeight;
+    // var marginTop = (windowHeight - imageHeight) / 2;
+
+    // lightboxImage.style.marginTop = marginTop + 'px';
+}
+
+
+    function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateLightbox(images[currentImageIndex]);
+}
+
+function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateLightbox(images[currentImageIndex]);
+}
+
+function updateLightbox(imageSrc) {
+    var lightboxImage = document.getElementById('lightboxImage');
+    var isVertical = isImageVertical(imageSrc);
+
+    lightboxImage.src = imageSrc;
+    document.getElementById("lightboxtext").style.display = "none";
+    updateLightboxLayout(isVertical);
+}
+
+
+
+
+
+
+
+
+
+            document.getElementById("scrollButton").addEventListener("click", function() {
+        smoothScrollToTop(1000); // 10 seconds for smooth scroll
+    });
+    
+    function smoothScrollToTop(duration) {
+        const startingY = window.pageYOffset;
+        const targetY = 0;
+        const distance = targetY - startingY;
+        const startTime = performance.now();
+    
+        function step(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const scrollY = easeInOut(elapsedTime, startingY, distance, duration);
+            window.scrollTo(0, scrollY);
+            if (elapsedTime < duration) {
+                requestAnimationFrame(step);
+            }
+        }
+    
+        function easeInOut(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+    
+        requestAnimationFrame(step);
+    }
+
+        
+                //  for mobilenav slide 
+document.addEventListener("DOMContentLoaded", function () {
+    const hamberger = document.querySelector(".hamberger");
+    const times= document.querySelector(".times");
+    const mobilenav = document.querySelector(".mobile-nav");
+
+    hamberger.addEventListener("click", function () {
+    mobilenav.classList.add('open')
+    });
+
+    times.addEventListener("click", function () {
+        mobilenav.classList.remove('open')
+    });
+});
+
+
+        </script>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+</body>
+</html>
